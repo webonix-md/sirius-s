@@ -96,6 +96,15 @@
     }
   }
 
+  /* ---- кнопка «Наверх»: появляется, когда пролистали первый экран ---- */
+  var totop = $('.totop');
+  if (totop) {
+    var onScroll = function () { totop.classList.toggle('is-on', window.scrollY > 600); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    totop.addEventListener('click', function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  }
+
   /* ---- копирование реквизитов ---- */
   $$('[data-copy]').forEach(function (b) {
     b.addEventListener('click', function () {

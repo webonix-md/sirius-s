@@ -307,6 +307,14 @@ input{font:inherit;color:inherit}
 .ftr__about{margin-top:16px;max-width:360px}
 .ftr__bottom{margin-top:36px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:#93A98B}
 
+/* ===== Кнопка «Наверх» ===== */
+.totop{position:fixed;right:20px;bottom:20px;z-index:30;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+  background:var(--sun);color:var(--ink);box-shadow:0 6px 18px rgba(31,42,30,.3);opacity:0;visibility:hidden;transform:translateY(12px);
+  transition:opacity .25s,transform .25s,visibility .25s,background .2s}
+.totop svg{width:24px;height:24px}
+.totop:hover{background:#E5A91F}
+.totop.is-on{opacity:1;visibility:visible;transform:none}
+
 /* ===== Внутренние страницы ===== */
 .page-head{padding:44px 0 28px}
 .crumbs{font-size:14px;color:var(--muted);margin-bottom:12px}

@@ -19,7 +19,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/Jost-Bold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=21">
+<link rel="stylesheet" href="style.css?v=23">
 </head>
 <body>
 
@@ -42,9 +42,9 @@
     </a>
     <nav class="nav" aria-label="Разделы">
       <a href="#pay">Оплата</a>
-      <a href="#waste">Мусор</a>
       <a href="#contacts">Контакты</a>
       <a href="docs.html">Документы</a>
+      <a href="#waste">Мусор</a>
     </nav>
     <button class="burger" type="button" aria-label="Меню" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
@@ -174,8 +174,142 @@
   </div>
 </section>
 
+<!-- ===== Контакты ===== -->
+<section class="sec" id="contacts">
+  <div class="wrap">
+    <div class="sec__head">
+      <div>
+        <span class="kicker">Контакты</span>
+        <h2>К кому обращаться</h2>
+        <p>Чтобы не спрашивать в чате «а кто отвечает за воду». Звоните, пожалуйста, в указанные часы.</p>
+      </div>
+    </div>
+    <div class="people">
+      <div class="person">
+        <span class="person__ava">СМ</span>
+        <span class="person__role">Председатель</span>
+        <h3>Сергей Мунтяну</h3>
+        <p class="person__what">Общие вопросы, собрания, вступление в кооператив, переоформление участков</p>
+        <a class="person__phone" href="tel:+37300000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>000 000 000</a>
+        <span class="person__hours">будни 18:00–20:00, сб 10:00–14:00</span>
+      </div>
+      <div class="person">
+        <span class="person__ava">ЕР</span>
+        <span class="person__role">Бухгалтер</span>
+        <h3>Елена Робу</h3>
+        <p class="person__what">Взносы, квитанции, сверка оплат, приём наличных</p>
+        <a class="person__phone" href="tel:+37300000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>000 000 000</a>
+        <span class="person__hours">сб 10:00–13:00, в правлении</span>
+      </div>
+      <div class="person">
+        <span class="person__ava">ВГ</span>
+        <span class="person__role">Вода</span>
+        <h3>Василий Гуцу</h3>
+        <p class="person__what">Водопровод, насос, график полива, порывы труб</p>
+        <a class="person__phone" href="tel:+37300000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>000 000 000</a>
+        <span class="person__hours">в сезон — ежедневно 8:00–20:00</span>
+      </div>
+      <div class="person">
+        <span class="person__ava">АЧ</span>
+        <span class="person__role">Электрик</span>
+        <h3>Андрей Чобану</h3>
+        <p class="person__what">Свет на линиях, подключение участков, счётчики</p>
+        <a class="person__phone" href="tel:+37300000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>000 000 000</a>
+        <span class="person__hours">по договорённости</span>
+      </div>
+    </div>
+    <div class="sos">
+      <div class="sos__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg>Экстренно</div>
+      <a href="tel:112"><span>Пожар, скорая, полиция</span><b>112</b></a>
+      <a href="tel:904"><span>Газовая служба, авария</span><b>904</b></a>
+      <a href="tel:+37300000000"><span>Авария электросетей</span><b>000 000 000</b></a>
+      <a href="tel:+37300000000"><span>Водоканал, авария</span><b>000 000 000</b></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Правила ===== -->
+<section class="sec sec--alt" id="rules">
+  <div class="wrap">
+    <div class="sec__head">
+      <div>
+        <span class="kicker">Правила</span>
+        <h2>Чтобы жить по-соседски</h2>
+        <p>Выдержки из правил внутреннего распорядка, утверждённых общим собранием. Полный текст — в документах.</p>
+      </div>
+      <a class="link-arrow" href="docs.html">Полный текст правил</a>
+    </div>
+    <div class="rules">
+      <details class="rule" open>
+        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H3v6h3l5 4V5ZM16 9a4 4 0 0 1 0 6"/></svg></i>Тишина</summary>
+        <p>С 22:00 до 8:00 и по выходным с 13:00 до 15:00 — без газонокосилок, болгарок и громкой музыки.</p>
+      </details>
+      <details class="rule">
+        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4-2 7-5.5 7-10 0-3-2-5-4-6-1 2.5-3 3.5-3 3.5S11 5 8 3C6 6 5 8.5 5 11c0 4.5 3 8 7 10Z"/></svg></i>Костры и сжигание</summary>
+        <p>Сжигать листву, ветки и мусор запрещено. Мангал — только на своём участке, не ближе 5 м от построек и не в ветреную погоду.</p>
+      </details>
+      <details class="rule">
+        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2l2-6h10l2 6h2M5 17v3M19 17v3"/></svg></i>Проезд и парковка</summary>
+        <p>Не оставляйте машины на линиях — должна проехать пожарная и скорая. Скорость внутри — не выше 10 км/ч, на линиях играют дети.</p>
+      </details>
+      <details class="rule">
+        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11Z"/></svg></i>Вода</summary>
+        <p>Полив — только в дни своей линии. Шланг без присмотра не оставлять. О протечках сразу сообщайте ответственному за воду.</p>
+      </details>
+      <details class="rule">
+        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="2"/><circle cx="17" cy="8" r="2"/><circle cx="4.5" cy="13" r="1.8"/><circle cx="19.5" cy="13" r="1.8"/><path d="M12 12c-3 0-5 4-5 6s2 2 5 2 5 0 5-2-2-6-5-6Z"/></svg></i>Собаки</summary>
+        <p>На линиях — на поводке. Крупные собаки на участке — за надёжным забором. Убирайте за питомцем.</p>
+      </details>
+      <details class="rule">
+        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></i>Ворота и гости</summary>
+        <p>Код от ворот не публикуется в чате и не передаётся посторонним. Закрывайте ворота за собой, особенно вечером.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Документы ===== -->
+<section class="sec" id="docs">
+  <div class="wrap">
+    <div class="sec__head">
+      <div>
+        <span class="kicker">Документы</span>
+        <h2>Устав, протоколы, отчёты</h2>
+        <p>Каждый член кооператива может посмотреть, что решили на собрании и на что ушли деньги.</p>
+      </div>
+      <a class="btn btn--line" href="docs.html">Все документы</a>
+    </div>
+    <div class="docs-grid">
+      <a class="doc" href="docs.html">
+        <span class="doc__ico"><svg viewBox="0 0 40 48" fill="none"><path d="M2 4a3 3 0 0 1 3-3h21l12 12v31a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V4Z" fill="#fff" stroke="#C9BC9F" stroke-width="1.5"/><path d="M26 1v9a3 3 0 0 0 3 3h9" stroke="#C9BC9F" stroke-width="1.5"/><rect x="7" y="30" width="22" height="10" rx="2" fill="#C2503A"/><text x="18" y="37.5" font-size="7" font-weight="700" fill="#fff" text-anchor="middle" font-family="Jost,sans-serif">PDF</text></svg></span>
+        <span class="doc__type">Протокол</span>
+        <h3>Общее собрание 12 апреля 2026</h3>
+        <span class="doc__meta">PDF · 4 стр.</span>
+      </a>
+      <a class="doc" href="docs.html">
+        <span class="doc__ico"><svg viewBox="0 0 40 48" fill="none"><path d="M2 4a3 3 0 0 1 3-3h21l12 12v31a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V4Z" fill="#fff" stroke="#C9BC9F" stroke-width="1.5"/><path d="M26 1v9a3 3 0 0 0 3 3h9" stroke="#C9BC9F" stroke-width="1.5"/><rect x="7" y="30" width="22" height="10" rx="2" fill="#2F5D3A"/><text x="18" y="37.5" font-size="7" font-weight="700" fill="#fff" text-anchor="middle" font-family="Jost,sans-serif">XLS</text></svg></span>
+        <span class="doc__type">Смета</span>
+        <h3>Смета доходов и расходов на 2026 год</h3>
+        <span class="doc__meta">XLSX · 1 лист</span>
+      </a>
+      <a class="doc" href="docs.html">
+        <span class="doc__ico"><svg viewBox="0 0 40 48" fill="none"><path d="M2 4a3 3 0 0 1 3-3h21l12 12v31a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V4Z" fill="#fff" stroke="#C9BC9F" stroke-width="1.5"/><path d="M26 1v9a3 3 0 0 0 3 3h9" stroke="#C9BC9F" stroke-width="1.5"/><rect x="7" y="30" width="22" height="10" rx="2" fill="#C2503A"/><text x="18" y="37.5" font-size="7" font-weight="700" fill="#fff" text-anchor="middle" font-family="Jost,sans-serif">PDF</text></svg></span>
+        <span class="doc__type">Отчёт</span>
+        <h3>Замена насоса: чек, акт, фото</h3>
+        <span class="doc__meta">PDF · 3 стр.</span>
+      </a>
+      <a class="doc" href="docs.html">
+        <span class="doc__ico"><svg viewBox="0 0 40 48" fill="none"><path d="M2 4a3 3 0 0 1 3-3h21l12 12v31a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V4Z" fill="#fff" stroke="#C9BC9F" stroke-width="1.5"/><path d="M26 1v9a3 3 0 0 0 3 3h9" stroke="#C9BC9F" stroke-width="1.5"/><rect x="7" y="30" width="22" height="10" rx="2" fill="#3C6FB0"/><text x="18" y="37.5" font-size="7" font-weight="700" fill="#fff" text-anchor="middle" font-family="Jost,sans-serif">DOC</text></svg></span>
+        <span class="doc__type">Бланк</span>
+        <h3>Доверенность на голосование</h3>
+        <span class="doc__meta">DOCX · 1 стр.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ===== Вывоз мусора ===== -->
-<section class="sec" id="waste">
+<section class="sec sec--alt" id="waste">
   <div class="wrap">
     <div class="sec__head">
       <div>
@@ -326,140 +460,6 @@
   </div>
 </section>
 
-<!-- ===== Контакты ===== -->
-<section class="sec sec--alt" id="contacts">
-  <div class="wrap">
-    <div class="sec__head">
-      <div>
-        <span class="kicker">Контакты</span>
-        <h2>К кому обращаться</h2>
-        <p>Чтобы не спрашивать в чате «а кто отвечает за воду». Звоните, пожалуйста, в указанные часы.</p>
-      </div>
-    </div>
-    <div class="people">
-      <div class="person">
-        <span class="person__ava">СМ</span>
-        <span class="person__role">Председатель</span>
-        <h3>Сергей Мунтяну</h3>
-        <p class="person__what">Общие вопросы, собрания, вступление в кооператив, переоформление участков</p>
-        <a class="person__phone" href="tel:+37300000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>000 000 000</a>
-        <span class="person__hours">будни 18:00–20:00, сб 10:00–14:00</span>
-      </div>
-      <div class="person">
-        <span class="person__ava">ЕР</span>
-        <span class="person__role">Бухгалтер</span>
-        <h3>Елена Робу</h3>
-        <p class="person__what">Взносы, квитанции, сверка оплат, приём наличных</p>
-        <a class="person__phone" href="tel:+37300000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>000 000 000</a>
-        <span class="person__hours">сб 10:00–13:00, в правлении</span>
-      </div>
-      <div class="person">
-        <span class="person__ava">ВГ</span>
-        <span class="person__role">Вода</span>
-        <h3>Василий Гуцу</h3>
-        <p class="person__what">Водопровод, насос, график полива, порывы труб</p>
-        <a class="person__phone" href="tel:+37300000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>000 000 000</a>
-        <span class="person__hours">в сезон — ежедневно 8:00–20:00</span>
-      </div>
-      <div class="person">
-        <span class="person__ava">АЧ</span>
-        <span class="person__role">Электрик</span>
-        <h3>Андрей Чобану</h3>
-        <p class="person__what">Свет на линиях, подключение участков, счётчики</p>
-        <a class="person__phone" href="tel:+37300000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>000 000 000</a>
-        <span class="person__hours">по договорённости</span>
-      </div>
-    </div>
-    <div class="sos">
-      <div class="sos__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg>Экстренно</div>
-      <a href="tel:112"><span>Пожар, скорая, полиция</span><b>112</b></a>
-      <a href="tel:904"><span>Газовая служба, авария</span><b>904</b></a>
-      <a href="tel:+37300000000"><span>Авария электросетей</span><b>000 000 000</b></a>
-      <a href="tel:+37300000000"><span>Водоканал, авария</span><b>000 000 000</b></a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Правила ===== -->
-<section class="sec" id="rules">
-  <div class="wrap">
-    <div class="sec__head">
-      <div>
-        <span class="kicker">Правила</span>
-        <h2>Чтобы жить по-соседски</h2>
-        <p>Выдержки из правил внутреннего распорядка, утверждённых общим собранием. Полный текст — в документах.</p>
-      </div>
-      <a class="link-arrow" href="docs.html">Полный текст правил</a>
-    </div>
-    <div class="rules">
-      <details class="rule" open>
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H3v6h3l5 4V5ZM16 9a4 4 0 0 1 0 6"/></svg></i>Тишина</summary>
-        <p>С 22:00 до 8:00 и по выходным с 13:00 до 15:00 — без газонокосилок, болгарок и громкой музыки.</p>
-      </details>
-      <details class="rule">
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4-2 7-5.5 7-10 0-3-2-5-4-6-1 2.5-3 3.5-3 3.5S11 5 8 3C6 6 5 8.5 5 11c0 4.5 3 8 7 10Z"/></svg></i>Костры и сжигание</summary>
-        <p>Сжигать листву, ветки и мусор запрещено. Мангал — только на своём участке, не ближе 5 м от построек и не в ветреную погоду.</p>
-      </details>
-      <details class="rule">
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2l2-6h10l2 6h2M5 17v3M19 17v3"/></svg></i>Проезд и парковка</summary>
-        <p>Не оставляйте машины на линиях — должна проехать пожарная и скорая. Скорость внутри — не выше 10 км/ч, на линиях играют дети.</p>
-      </details>
-      <details class="rule">
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11Z"/></svg></i>Вода</summary>
-        <p>Полив — только в дни своей линии. Шланг без присмотра не оставлять. О протечках сразу сообщайте ответственному за воду.</p>
-      </details>
-      <details class="rule">
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="2"/><circle cx="17" cy="8" r="2"/><circle cx="4.5" cy="13" r="1.8"/><circle cx="19.5" cy="13" r="1.8"/><path d="M12 12c-3 0-5 4-5 6s2 2 5 2 5 0 5-2-2-6-5-6Z"/></svg></i>Собаки</summary>
-        <p>На линиях — на поводке. Крупные собаки на участке — за надёжным забором. Убирайте за питомцем.</p>
-      </details>
-      <details class="rule">
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></i>Ворота и гости</summary>
-        <p>Код от ворот не публикуется в чате и не передаётся посторонним. Закрывайте ворота за собой, особенно вечером.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Документы ===== -->
-<section class="sec sec--alt" id="docs">
-  <div class="wrap">
-    <div class="sec__head">
-      <div>
-        <span class="kicker">Документы</span>
-        <h2>Устав, протоколы, отчёты</h2>
-        <p>Каждый член кооператива может посмотреть, что решили на собрании и на что ушли деньги.</p>
-      </div>
-      <a class="btn btn--line" href="docs.html">Все документы</a>
-    </div>
-    <div class="docs-grid">
-      <a class="doc" href="docs.html">
-        <span class="doc__ico"><svg viewBox="0 0 40 48" fill="none"><path d="M2 4a3 3 0 0 1 3-3h21l12 12v31a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V4Z" fill="#fff" stroke="#C9BC9F" stroke-width="1.5"/><path d="M26 1v9a3 3 0 0 0 3 3h9" stroke="#C9BC9F" stroke-width="1.5"/><rect x="7" y="30" width="22" height="10" rx="2" fill="#C2503A"/><text x="18" y="37.5" font-size="7" font-weight="700" fill="#fff" text-anchor="middle" font-family="Jost,sans-serif">PDF</text></svg></span>
-        <span class="doc__type">Протокол</span>
-        <h3>Общее собрание 12 апреля 2026</h3>
-        <span class="doc__meta">PDF · 4 стр.</span>
-      </a>
-      <a class="doc" href="docs.html">
-        <span class="doc__ico"><svg viewBox="0 0 40 48" fill="none"><path d="M2 4a3 3 0 0 1 3-3h21l12 12v31a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V4Z" fill="#fff" stroke="#C9BC9F" stroke-width="1.5"/><path d="M26 1v9a3 3 0 0 0 3 3h9" stroke="#C9BC9F" stroke-width="1.5"/><rect x="7" y="30" width="22" height="10" rx="2" fill="#2F5D3A"/><text x="18" y="37.5" font-size="7" font-weight="700" fill="#fff" text-anchor="middle" font-family="Jost,sans-serif">XLS</text></svg></span>
-        <span class="doc__type">Смета</span>
-        <h3>Смета доходов и расходов на 2026 год</h3>
-        <span class="doc__meta">XLSX · 1 лист</span>
-      </a>
-      <a class="doc" href="docs.html">
-        <span class="doc__ico"><svg viewBox="0 0 40 48" fill="none"><path d="M2 4a3 3 0 0 1 3-3h21l12 12v31a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V4Z" fill="#fff" stroke="#C9BC9F" stroke-width="1.5"/><path d="M26 1v9a3 3 0 0 0 3 3h9" stroke="#C9BC9F" stroke-width="1.5"/><rect x="7" y="30" width="22" height="10" rx="2" fill="#C2503A"/><text x="18" y="37.5" font-size="7" font-weight="700" fill="#fff" text-anchor="middle" font-family="Jost,sans-serif">PDF</text></svg></span>
-        <span class="doc__type">Отчёт</span>
-        <h3>Замена насоса: чек, акт, фото</h3>
-        <span class="doc__meta">PDF · 3 стр.</span>
-      </a>
-      <a class="doc" href="docs.html">
-        <span class="doc__ico"><svg viewBox="0 0 40 48" fill="none"><path d="M2 4a3 3 0 0 1 3-3h21l12 12v31a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V4Z" fill="#fff" stroke="#C9BC9F" stroke-width="1.5"/><path d="M26 1v9a3 3 0 0 0 3 3h9" stroke="#C9BC9F" stroke-width="1.5"/><rect x="7" y="30" width="22" height="10" rx="2" fill="#3C6FB0"/><text x="18" y="37.5" font-size="7" font-weight="700" fill="#fff" text-anchor="middle" font-family="Jost,sans-serif">DOC</text></svg></span>
-        <span class="doc__type">Бланк</span>
-        <h3>Доверенность на голосование</h3>
-        <span class="doc__meta">DOCX · 1 стр.</span>
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- ===== Viber ===== -->
 <section class="join sec" style="padding-top:76px">
   <div class="wrap">
@@ -512,6 +512,8 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=4"></script>
+<a class="totop" href="#top" aria-label="Наверх"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+
+<script src="js/main.js?v=5"></script>
 </body>
 </html>
