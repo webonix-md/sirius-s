@@ -356,7 +356,7 @@ input{font:inherit;color:inherit}
   /* телефон и планшет: фото полосой сверху, тает в фон под заголовок */
   .hero{padding:0 0 92px}
   .hero__bg{position:relative;inset:auto;height:min(62vw,420px)}
-  .eyebrow {padding-top: 40px;}
+  .eyebrow {padding-top: 20px;}
   /* .hero__mask{position:absolute;z-index:0;pointer-events:none;inset:0 0 auto;height:min(62vw,420px);background:
     linear-gradient(to top,#F5F1E8,rgba(245,241,232,.55) 6%,rgba(245,241,232,0) 14%)} */
   .hero .wrap{margin-top:-12px}
