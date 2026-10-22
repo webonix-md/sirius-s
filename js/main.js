@@ -96,6 +96,20 @@
     }
   }
 
+  /* ---- телефон: карточка памятки открывается и закрывается нажатием ---- */
+  var phone = window.matchMedia('(max-width:600px)');
+  $$('.bin').forEach(function (b) {
+    var head = $('.bin__head', b);
+    head.setAttribute('role', 'button');
+    head.setAttribute('tabindex', '0');
+    var sync = function () { head.setAttribute('aria-expanded', phone.matches ? b.classList.contains('is-open') : 'true'); };
+    var toggle = function () { if (!phone.matches) return; b.classList.toggle('is-open'); sync(); };
+    b.addEventListener('click', toggle);
+    head.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+    sync();
+    if (phone.addEventListener) phone.addEventListener('change', sync);
+  });
+
   /* ---- кнопка «Наверх»: появляется, когда пролистали первый экран ---- */
   var totop = $('.totop');
   if (totop) {

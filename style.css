@@ -88,8 +88,8 @@ input{font:inherit;color:inherit}
 .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--leaf)}
 .eyebrow::before{content:"";width:22px;height:2px;background:currentColor}
-.hero h1{font-size:clamp(40px,6vw,72px);margin:16px 0 18px;letter-spacing:-.025em}
-.hero h1 span{color:var(--leaf)}
+.hero h1{font-size:clamp(40px,6vw,72px);margin:16px 0 18px;letter-spacing:-.025em;color: var(--leaf);}
+/* .hero h1 span{color:var(--leaf)} */
 .hero__lead{font-size:19px;color:var(--muted);max-width:520px}
 .hero__btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 
@@ -97,7 +97,7 @@ input{font:inherit;color:inherit}
 .board{position:relative;background:var(--board);border-radius:var(--r);padding:34px 28px 30px;min-height:520px;
   background-image:radial-gradient(rgba(120,95,50,.13) 1px,transparent 1.4px);background-size:14px 14px;
   box-shadow:inset 0 0 0 10px #D5C39E}
-.board__title{position:absolute;top:-14px;left:28px;background:var(--ink);color:var(--paper);font-weight:600;font-size:14px;padding:5px 12px;border-radius:6px;letter-spacing:.03em}
+.board__title{position:absolute;top:-14px;left:28px;background:var(--leaf-dark);color:var(--paper);font-weight:600;font-size:14px;padding:5px 12px;border-radius:6px;letter-spacing:.03em}
 .note{position:relative;padding:20px 20px 18px;border-radius:4px;box-shadow:0 2px 3px rgba(60,45,20,.12),0 10px 18px rgba(60,45,20,.10);text-decoration:none;display:block;transition:transform .25s}
 .note:hover{transform:rotate(0deg) translateY(-3px)!important}
 .note::before{content:"";position:absolute;top:-7px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--apple);box-shadow:0 2px 2px rgba(0,0,0,.25),inset -2px -2px 0 rgba(0,0,0,.15)}
@@ -205,7 +205,7 @@ input{font:inherit;color:inherit}
 .sortbox__text{flex:1;min-width:0}
 .sortbox__text b{display:block;font-size:20px;line-height:1.2}
 .sortbox__text small{display:block;font-size:14.5px;color:var(--muted);margin-top:2px}
-.sortbox__btn{flex:none;display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:9px 14px;border-radius:var(--r-sm);background:var(--ink);color:var(--paper)}
+.sortbox__btn{flex:none;display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:9px 14px;border-radius:var(--r-sm);background:var(--leaf-dark);color:var(--paper)}
 .sortbox__btn::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s}
 .sortbox[open] .sortbox__btn::after{transform:rotate(-135deg) translate(-2px,0)}
 .sortbox__close,.sortbox[open] .sortbox__open{display:none}
@@ -228,21 +228,24 @@ input{font:inherit;color:inherit}
 .bin li::before{content:"";position:absolute;left:2px;top:.45em;width:9px;height:5px;border-left:2px solid var(--leaf);border-bottom:2px solid var(--leaf);transform:rotate(-45deg)}
 .bin ul.no li::before{content:"×";border:0;transform:none;top:-.05em;left:2px;width:auto;height:auto;color:var(--apple);font-weight:700;font-size:17px;line-height:1}
 
-.operator{margin-top:32px;display:grid;grid-template-columns:1.6fr 1fr;border:1.5px solid var(--ink);border-radius:var(--r);overflow:hidden;background:var(--card)}
+.operator{margin-top:32px;display:grid;grid-template-columns:1.25fr 1fr;border:1.5px solid var(--ink);border-radius:var(--r);overflow:hidden;background:var(--card)}
 .operator__main{padding:28px}
 .operator h3{font-size:24px;margin-bottom:8px}
 .operator__main>p{color:var(--muted);font-size:15.5px}
-.operator__phones{display:flex;flex-wrap:wrap;gap:14px 32px;margin:20px 0}
+.operator__phones{display:flex;flex-wrap:wrap;gap:14px 32px;margin-top:20px}
 .operator__phones a{text-decoration:none}
 .operator__phones span{display:block;font-size:13px;color:var(--muted)}
 .operator__phones b{font-size:18px}
-.operator__links{display:flex;flex-wrap:wrap;gap:10px}
 .operator__extra{margin-top:18px;font-size:14.5px;color:var(--muted)}
-.operator__offices{padding:28px;background:var(--paper);border-left:1px solid var(--line)}
-.operator__offices h4{font-size:17px;margin-bottom:10px}
-.operator__offices ul{list-style:none;margin:0;padding:0}
-.operator__offices li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
-.operator__offices a{font-weight:600;text-decoration:none;white-space:nowrap}
+.opreq{padding:28px;background:var(--paper);border-left:1px solid var(--line)}
+.opreq h4{font-size:18px}
+.opreq__intro{font-size:14.5px;color:var(--muted);margin:4px 0 10px}
+.opreq__row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-top:1px dashed var(--line)}
+.opreq__row span{display:block;font-size:13px;color:var(--muted)}
+.opreq__row b{font-weight:600;font-size:16px;word-break:break-word}
+.opreq__row small{display:block;font-size:14px;color:var(--muted);margin-top:2px}
+.copy--light{border-color:var(--line);color:var(--ink);background:var(--card)}
+.copy--light:hover{background:var(--leaf-soft)}
 
 /* ===== Контакты ===== */
 .people{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
@@ -266,9 +269,9 @@ input{font:inherit;color:inherit}
 .sos a b{font-size:20px}
 
 /* ===== Правила ===== */
-.rules{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;align-items:start}
 .rule{border-top:1px solid var(--line)}
-.rule:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+.rule:last-child{border-bottom:1px solid var(--line)}
 .rule summary{list-style:none;display:flex;align-items:center;gap:14px;padding:18px 0;font-weight:600;font-size:18px;cursor:pointer}
 .rule summary::-webkit-details-marker{display:none}
 .rule summary i{flex:none;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--leaf-soft);color:var(--leaf)}
@@ -373,10 +376,10 @@ input{font:inherit;color:inherit}
   .status__row{grid-template-columns:1fr}
   .status__cell+.status__cell{border-left:0;border-top:1px solid var(--line)}
   .pay,.waste-top,.operator{grid-template-columns:1fr}
+  .opreq{border-left:0;border-top:1px solid var(--line)}
   .cal{grid-template-columns:1fr 1fr}
-  .operator__offices{border-left:0;border-top:1px solid var(--line)}
   .rules{grid-template-columns:1fr}
-  .rule:nth-last-child(2){border-bottom:0}
+  .rules__col:first-child .rule:last-child{border-bottom:0}
   .sos{grid-template-columns:1fr 1fr}
   .sos__title{grid-column:1/-1}
   .sos a:nth-of-type(odd){border-left:0}
@@ -408,7 +411,7 @@ input{font:inherit;color:inherit}
   .cal{grid-template-columns:1fr}
   .month.is-past{display:none}
   .next__date{font-size:28px}
-  .operator__main,.operator__offices{padding:22px}
+  .operator__main,.opreq{padding:22px}
   .fee{grid-template-columns:1fr}
   .fee__sum{grid-row:auto;grid-column:1;text-align:left;font-size:26px}
   .req{padding:22px}
@@ -421,4 +424,14 @@ input{font:inherit;color:inherit}
 @media (max-width:400px){
   /* на узких телефонах в верхней строке — телефон правления и RU/RO, Viber есть внизу страницы */
   .topbar__right a[href^="viber:"]{display:none}
+}
+
+/* телефон: карточки «что куда выбрасывать» раскрываются и закрываются по нажатию */
+@media (max-width:600px){
+  .bin{cursor:pointer;-webkit-tap-highlight-color:transparent}
+  .bin__head{margin:0}
+  .bin__head::after{content:"";margin-left:auto;flex:none;width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+  .bin.is-open .bin__head::after{transform:rotate(-135deg) translate(-3px,0)}
+  .bin:not(.is-open)>:not(.bin__head){display:none}
+  .bin.is-open .bin__head{margin-bottom:6px}
 }

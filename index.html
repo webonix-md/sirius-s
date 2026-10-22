@@ -19,7 +19,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/Jost-Bold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=23">
+<link rel="stylesheet" href="style.css?v=29">
 </head>
 <body>
 
@@ -187,7 +187,7 @@
     <div class="people">
       <div class="person">
         <span class="person__ava">СМ</span>
-        <span class="person__role">Председатель</span>
+        <span class="person__role">Администратор</span>
         <h3>Сергей Мунтяну</h3>
         <p class="person__what">Общие вопросы, собрания, вступление в кооператив, переоформление участков</p>
         <a class="person__phone" href="tel:+37300000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>000 000 000</a>
@@ -239,31 +239,36 @@
       </div>
       <a class="link-arrow" href="docs.html">Полный текст правил</a>
     </div>
+    <!-- две независимые колонки: новое правило добавляйте в ту, что короче -->
     <div class="rules">
-      <details class="rule" open>
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H3v6h3l5 4V5ZM16 9a4 4 0 0 1 0 6"/></svg></i>Тишина</summary>
-        <p>С 22:00 до 8:00 и по выходным с 13:00 до 15:00 — без газонокосилок, болгарок и громкой музыки.</p>
-      </details>
-      <details class="rule">
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4-2 7-5.5 7-10 0-3-2-5-4-6-1 2.5-3 3.5-3 3.5S11 5 8 3C6 6 5 8.5 5 11c0 4.5 3 8 7 10Z"/></svg></i>Костры и сжигание</summary>
-        <p>Сжигать листву, ветки и мусор запрещено. Мангал — только на своём участке, не ближе 5 м от построек и не в ветреную погоду.</p>
-      </details>
-      <details class="rule">
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2l2-6h10l2 6h2M5 17v3M19 17v3"/></svg></i>Проезд и парковка</summary>
-        <p>Не оставляйте машины на линиях — должна проехать пожарная и скорая. Скорость внутри — не выше 10 км/ч, на линиях играют дети.</p>
-      </details>
-      <details class="rule">
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11Z"/></svg></i>Вода</summary>
-        <p>Шланг без присмотра не оставлять. О протечках сразу сообщайте ответственному за воду.</p>
-      </details>
-      <details class="rule">
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="2"/><circle cx="17" cy="8" r="2"/><circle cx="4.5" cy="13" r="1.8"/><circle cx="19.5" cy="13" r="1.8"/><path d="M12 12c-3 0-5 4-5 6s2 2 5 2 5 0 5-2-2-6-5-6Z"/></svg></i>Собаки</summary>
-        <p>На линиях — на поводке. Крупные собаки на участке — за надёжным забором. Убирайте за питомцем.</p>
-      </details>
-      <details class="rule">
-        <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></i>Ворота и гости</summary>
-        <p>Код от ворот не публикуется в чате и не передаётся посторонним. Закрывайте ворота за собой, особенно вечером.</p>
-      </details>
+      <div class="rules__col">
+        <details class="rule" open>
+          <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 5 6 9H3v6h3l5 4V5ZM16 9a4 4 0 0 1 0 6"/></svg></i>Тишина</summary>
+          <p>С 22:00 до 8:00 и по выходным с 13:00 до 15:00 — без газонокосилок, болгарок и громкой музыки.</p>
+        </details>
+        <details class="rule">
+          <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2l2-6h10l2 6h2M5 17v3M19 17v3"/></svg></i>Проезд и парковка</summary>
+          <p>Не оставляйте машины на линиях — должна проехать пожарная и скорая. Скорость внутри — не выше 10 км/ч, на линиях играют дети.</p>
+        </details>
+        <details class="rule">
+          <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="2"/><circle cx="17" cy="8" r="2"/><circle cx="4.5" cy="13" r="1.8"/><circle cx="19.5" cy="13" r="1.8"/><path d="M12 12c-3 0-5 4-5 6s2 2 5 2 5 0 5-2-2-6-5-6Z"/></svg></i>Собаки</summary>
+          <p>На линиях — на поводке. Крупные собаки на участке — за надёжным забором. Убирайте за питомцем.</p>
+        </details>
+      </div>
+      <div class="rules__col">
+        <details class="rule">
+          <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4-2 7-5.5 7-10 0-3-2-5-4-6-1 2.5-3 3.5-3 3.5S11 5 8 3C6 6 5 8.5 5 11c0 4.5 3 8 7 10Z"/></svg></i>Костры и сжигание</summary>
+          <p>Сжигать листву, ветки и мусор запрещено. Мангал — только на своём участке, не ближе 5 м от построек и не в ветреную погоду.</p>
+        </details>
+        <details class="rule">
+          <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11Z"/></svg></i>Вода</summary>
+          <p>Шланг без присмотра не оставлять. О протечках сразу сообщайте ответственному за воду.</p>
+        </details>
+        <details class="rule">
+          <summary><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></i>Ворота и гости</summary>
+          <p>Код от ворот не публикуется в чате и не передаётся посторонним. Закрывайте ворота за собой, особенно вечером.</p>
+        </details>
+      </div>
     </div>
   </div>
 </section>
@@ -327,7 +332,7 @@
         <div class="next__after"></div>
       </div>
       <ol class="wrules">
-        <li><b>Бак — к 8:00</b>Выставляйте бак у калитки в день вывоза к 8 утра.</li>
+        <li><b>Бак — к 8:00</b>Выставляйте бак в день вывоза к 8 утра.</li>
         <li><b>Не тяжелее 80 кг</b>Более тяжёлый бак не заберут.</li>
         <li><b>Лишний мусор — по звонку</b>Звоните в офис минимум за 2 дня до вывоза. Стоимость — 20 лей за мешок до 40 л.</li>
         <li><b>Оплата до 25 числа</b>Каждый месяц. Если не оплачено вовремя, мусор не вывозят.</li>
@@ -438,23 +443,15 @@
           <a href="tel:+37361021203"><span>Общий телефон</span><b>061 021 203</b></a>
           <a href="mailto:info@prestenergy.md"><span>Почта</span><b>info@prestenergy.md</b></a>
         </div>
-        <div class="operator__links">
-          <a class="btn btn--main btn--sm" href="https://prestenergy.md/instructiuni-de-plata" target="_blank" rel="noopener">Как оплатить онлайн</a>
-          <a class="btn btn--line btn--sm" href="https://prestenergy.md/date-bancare" target="_blank" rel="noopener">Банковские реквизиты</a>
-        </div>
         <p class="operator__extra">Также оператор оказывает услуги ассенизатора, прочистки канализации и аренды контейнера SKIP.</p>
       </div>
-      <div class="operator__offices">
-        <h4>Офисы в сёлах</h4>
-        <ul>
-          <li><span>Бачой</span><a href="tel:+37368375959">068 375 959</a></li>
-          <li><span>Сынджера</span><a href="tel:+37360326656">060 326 656</a></li>
-          <li><span>Флорень</span><a href="tel:+37368188755">068 188 755</a></li>
-          <li><span>Колоница</span><a href="tel:+37361002268">061 002 268</a></li>
-          <li><span>Трушень</span><a href="tel:+37360280203">060 280 203</a></li>
-          <li><span>Суручень</span><a href="tel:+37361033880">061 033 880</a></li>
-          <li><span>Малкоч</span><a href="tel:+37369326741">069 326 741</a></li>
-        </ul>
+      <div class="opreq">
+        <h4>Банковские реквизиты оператора</h4>
+        <p class="opreq__intro">Для оплаты вывоза мусора переводом из банка. Оплата — каждый месяц до 25 числа.</p>
+          <div class="opreq__row"><div><span>Получатель</span><b>«Prest Energy» SRL</b></div><button class="copy copy--light" type="button" data-copy="Prest Energy SRL"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>Копировать</button></div>
+          <div class="opreq__row"><div><span>Фискальный код</span><b>1016600003593</b></div><button class="copy copy--light" type="button" data-copy="1016600003593"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>Копировать</button></div>
+          <div class="opreq__row"><div><span>IBAN</span><b>MD49 AG00 0000 0225 1509 7955</b></div><button class="copy copy--light" type="button" data-copy="MD49AG000000022515097955"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>Копировать</button></div>
+          <div class="opreq__row"><div><span>Банк</span><b>Moldova Agroindbank, SWIFT AGRNMD2X</b><small>мун. Кишинёв, ул. Дачия, 30/3</small></div></div>
       </div>
     </div>
   </div>
@@ -466,7 +463,7 @@
     <div class="join__box">
       <div>
         <h2>Общаемся по-прежнему в Viber</h2>
-        <p>Сайт не заменяет группу: там — разговоры и быстрые вопросы, здесь — то, что должно лежать под рукой всегда. Новенький? Попросите председателя добавить вас в группу.</p>
+        <p>Сайт не заменяет группу: там — разговоры и быстрые вопросы, здесь — то, что должно лежать под рукой всегда. Новенький? Попросите администратора добавить вас в группу.</p>
       </div>
       <div class="join__btns">
         <a class="btn btn--viber" href="viber://chat?number=%2B37300000000"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 3 4.6 3 10.2c0 3.2 1.1 5.4 3 6.7V21l3.3-2.2c.9.2 1.8.3 2.7.3 5.5 0 9-2.6 9-8.9S17.5 2 12 2Zm4.4 12.4c-.3.8-1.3 1.3-2 1.2-2.6-.4-5.6-3.3-6-6-.1-.7.4-1.7 1.2-2 .4-.1.8 0 1 .4l.8 1.4c.2.4.1.8-.2 1.1l-.4.4c.4 1.2 1.6 2.4 2.8 2.8l.4-.4c.3-.3.7-.4 1.1-.2l1.4.8c.4.2.5.6.4 1Z"/></svg>Написать в Viber</a>
@@ -486,7 +483,7 @@
           <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#F5F1E8"/><path d="M24 8c1.3 10.6 5.4 14.7 16 16-10.6 1.3-14.7 5.4-16 16-1.3-10.6-5.4-14.7-16-16 10.6-1.3 14.7-5.4 16-16Z" fill="#F0B93A"/><path d="M36.5 7c.4 3.1 1.4 4.1 4.5 4.5-3.1.4-4.1 1.4-4.5 4.5-.4-3.1-1.4-4.1-4.5-4.5 3.1-.4 4.1-1.4 4.5-4.5Z" fill="#2F5D3A"/></svg>
           <span class="logo__name">Sirius-s<small>дачный кооператив</small></span>
         </a>
-        <p class="ftr__about">IDNO 0000000000000. Правление: здание у главных ворот, приём по субботам с 10:00 до 14:00.</p>
+        <p class="ftr__about">IDNO 0000000000000. Правление: здание у главного въезда, приём по субботам с 10:00 до 14:00.</p>
       </div>
       <div>
         <h4>Разделы</h4>
@@ -499,7 +496,7 @@
       <div>
         <h4>Связь</h4>
         <ul>
-          <li><a href="tel:+37300000000">000 000 000 — председатель</a></li>
+          <li><a href="tel:+37300000000">000 000 000 — администратор</a></li>
           <li><a href="tel:+37300000000">000 000 000 — бухгалтер</a></li>
           <li><a href="viber://chat?number=%2B37300000000">Группа в Viber</a></li>
         </ul>
@@ -514,6 +511,6 @@
 
 <a class="totop" href="#top" aria-label="Наверх"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
 
-<script src="js/main.js?v=5"></script>
+<script src="js/main.js?v=6"></script>
 </body>
 </html>
